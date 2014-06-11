@@ -19,8 +19,8 @@ end
 LIBV8_COMPATIBILITY = '~> 3.16.14'
 begin
   require 'rubygems'
-  # gem 'libv8', LIBV8_COMPATIBILITY
-  gem 'libv8', git: 'https://github.com/cowboyd/libv8', branch:'master', submodules: true
+  require 'bundler/setup'
+  gem 'libv8', LIBV8_COMPATIBILITY
 rescue Gem::LoadError
   warn "Warning! Unable to load libv8 #{LIBV8_COMPATIBILITY}."
 rescue LoadError

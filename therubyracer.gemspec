@@ -18,6 +18,5 @@ Gem::Specification.new do |gem|
   gem.license       = 'MIT'
 
   gem.add_dependency 'ref'
-  gem.add_dependency 'libv8', git: 'https://github.com/cowboyd/libv8', branch:'master'
-
+  gem.add_dependency 'libv8'
 end
